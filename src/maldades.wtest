@@ -1,3 +1,4 @@
+import objects.*
 
 describe "Test Villanos"{
 	var rosario  = new Ciudad(temperatura = 30)
@@ -5,11 +6,14 @@ describe "Test Villanos"{
 	var congelar = new Congelar()
 	var steve 	 = new Minion(bananas = 0)
 	var rayoC    = new Arma(nombre = "Rayo Congelante", poder = 10)
-
+// tengo instancias de cada clase
 	fixture{	
 		gru.agregarMinion(steve)
+//le pido a la instancia gru que agregue el minion steve a una lista?	
 		gru.nuevoMinion()
+//creo el nuevo minion
 		steve.otorgarArma(rayoC)
+//
 		
 	}
 	method alimentarMinions(){

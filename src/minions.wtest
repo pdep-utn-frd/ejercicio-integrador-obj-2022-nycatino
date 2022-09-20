@@ -1,4 +1,4 @@
-
+import objects.*
 
 describe "Test Minions"{
 
@@ -13,6 +13,7 @@ describe "Test Minions"{
 	}
 	test "steve no tiene armas" {
 		assert.that(steve.armas().isEmpty())
+//		steve.armas()es una coleccion
 	}
 	test "steve tiene una bazooka"{
 		steve.otorgarArma(arma2)
